@@ -16,7 +16,7 @@ const ProfilePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
 
   const getUser = async () => {
-    const response = await fetch(`${import.meta.env.VITE_APP_SERVER_URL}/users/${user_id}`, {
+    const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/users/${user_id}`, {
       method: "GET",
       headers: { 
         "Authorization": `Bearer ${token}`,
