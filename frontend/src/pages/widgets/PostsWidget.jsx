@@ -6,9 +6,10 @@ import PostWidget from "./PostWidget";
 
 const PostsWidget = ({ user_id, isProfile = false }) => {
   const dispatch = useDispatch();
-  const posts = useSelector((state) => state.posts)
-  let sortedPosts = [...posts]
-  sortedPosts.reverse()
+  let posts = useSelector((state) => state.posts)
+  let toDisplay = []
+  toDisplay.push(...posts)
+  toDisplay.reverse()
   const token = useSelector((state) => state.token);
 
   const getPosts = async () => {
@@ -40,7 +41,7 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
-      {(sortedPosts) ? sortedPosts.map(
+      {(toDisplay) ? toDisplay.map(
         ({
           _id,
           user_id,
