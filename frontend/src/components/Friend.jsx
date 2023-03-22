@@ -25,7 +25,7 @@ const Friend = ({ friendId, name, postUserPicture }) => {
   const isFriend = friends.find((friend) => friend._id === friendId);
   const patchFriend = async () => {
     const response = await fetch(
-      `http://mollgerman-besocial-backend.onrender.com/users/${_id}/${friendId}`,
+      `https://mollgerman-besocial-backend.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {

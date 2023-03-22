@@ -12,7 +12,7 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
 
 
   const getPosts = async () => {
-    const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/posts`, {
+    const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/posts`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
@@ -22,7 +22,7 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
 
   const getUserPosts = async () => {
     const response = await fetch(
-      `http://mollgerman-besocial-backend.onrender.com/posts/${user_id}/posts`,
+      `https://mollgerman-besocial-backend.onrender.com/posts/${user_id}/posts`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

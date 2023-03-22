@@ -26,7 +26,7 @@ import {
   
 
     const getUser = async () => {
-      const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/users/${user_id}`, {
+      const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/users/${user_id}`, {
         headers: { Authorization: `Bearer ${token}` },
       })
       const data = await response.json();

@@ -38,7 +38,7 @@ import UserImage from "../../components/UserImage";
     const main = palette.neutral.main;
     const primary = palette.primary.main;
     const getPostUserPicture = async () => {
-        const userResponse = await fetch(`http://mollgerman-besocial-backend.onrender.com/users/${postUserId}`,{
+        const userResponse = await fetch(`https://mollgerman-besocial-backend.onrender.com/users/${postUserId}`,{
             headers: {
                 Authorization: `Bearer ${token}`,
             }, 
@@ -50,7 +50,7 @@ import UserImage from "../../components/UserImage";
 
 
     const patchLike = async () => {
-      const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/posts/${postId}/like`, {
+      const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/posts/${postId}/like`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${ token }`,
@@ -69,7 +69,7 @@ import UserImage from "../../components/UserImage";
     patchCommentParams.append("comment", toComment);
 
     const patchComment = async () => {
-      const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/posts/${postId}/comment`, {
+      const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/posts/${postId}/comment`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${ token }`,
@@ -82,7 +82,7 @@ import UserImage from "../../components/UserImage";
     }
 
     const deletePost = async () => {
-      const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/posts/post`, {
+      const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/posts/post`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${ token }`,
