@@ -65,7 +65,7 @@ const LoginForm = () => {
       params.append(value, values[value])
     }
     const savedUserResponse = await fetch(
-      `${import.meta.env.VITE_APP_SERVER_URL}/auth/register`,
+      `http://mollgerman-besocial-backend.onrender.com/auth/register`,
       {
         method: "POST",
         body: params,
@@ -95,7 +95,7 @@ const LoginForm = () => {
   };
 
   const login = async (values, onSubmitProps) => {
-    const loggedInResponse = await fetch(`${import.meta.env.VITE_APP_SERVER_URL}/auth/login`, {
+    const loggedInResponse = await fetch(`http://mollgerman-besocial-backend.onrender.com/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

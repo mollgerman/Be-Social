@@ -15,7 +15,7 @@ const FriendListWidget = ({ user_id }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `${import.meta.env.VITE_APP_SERVER_URL}/users/${user_id}/friends`,
+      `http://mollgerman-besocial-backend.onrender.com/users/${user_id}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

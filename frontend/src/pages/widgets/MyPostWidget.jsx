@@ -49,7 +49,7 @@ import {
         // (isProfile) && params.append("isProfile", true)
 
     
-        const response = await fetch(`${import.meta.env.VITE_APP_SERVER_URL}/posts/post`, {
+        const response = await fetch(`http://mollgerman-besocial-backend.onrender.com/posts/post`, {
             method: "POST",
             headers: { Authorization: `Bearer ${token}` },
             body: params,
