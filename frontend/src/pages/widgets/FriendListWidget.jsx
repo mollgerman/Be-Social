@@ -58,7 +58,9 @@ const FriendListWidget = ({ user_id }) => {
             />
             ))
           : 
-          ''
+          <Typography
+            key={0} 
+          />
         }
       </Box>
     </WidgetWrapper>
