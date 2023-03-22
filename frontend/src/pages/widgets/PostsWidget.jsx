@@ -1,3 +1,4 @@
+import { Typography } from "@mui/material";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setPosts } from "../../state";
@@ -62,7 +63,7 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
           />
         ))
         :
-        ''
+        <Typography key={0}/>
       }
     </>
   );
