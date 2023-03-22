@@ -10,7 +10,6 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
   sortedPosts.reverse()
   const token = useSelector((state) => state.token);
 
-
   const getPosts = async () => {
     const response = await fetch(`https://mollgerman-besocial-backend.onrender.com/posts`, {
       method: "GET",

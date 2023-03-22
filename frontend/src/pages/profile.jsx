@@ -18,7 +18,10 @@ const ProfilePage = () => {
   const getUser = async () => {
     const response = await fetch(`${import.meta.env.VITE_APP_SERVER_URL}/users/${user_id}`, {
       method: "GET",
-      headers: { Authorization: `Bearer ${token}` },
+      headers: { 
+        "Authorization": `Bearer ${token}`,
+        "Access-Control-Allow-Origin": "*",
+      },
     });
     const data = await response.json();
     setUser(data);
