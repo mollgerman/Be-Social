@@ -7,9 +7,6 @@ import PostWidget from "./PostWidget";
 const PostsWidget = ({ user_id, isProfile = false }) => {
   const dispatch = useDispatch();
   let posts = useSelector((state) => state.posts)
-  let toDisplay = []
-  toDisplay.push(...posts)
-  toDisplay.reverse()
   const token = useSelector((state) => state.token);
 
   const getPosts = async () => {
@@ -17,7 +14,8 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
-    const data = await response.json();
+    let data = await response.json();
+    data.reverse()
     dispatch(setPosts({ posts: data }));
   };
 
@@ -41,7 +39,7 @@ const PostsWidget = ({ user_id, isProfile = false }) => {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <>
-      {(toDisplay) ? toDisplay.map(
+      {(posts) ? posts.map(
         ({
           _id,
           user_id,

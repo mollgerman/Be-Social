@@ -54,7 +54,8 @@ import {
             headers: { Authorization: `Bearer ${token}` },
             body: params,
         });
-        const posts = await response.json();
+        let posts = await response.json();
+        posts.reverse()
         dispatch(setPosts({ posts }));
         setImage64(null);
         setPost("");

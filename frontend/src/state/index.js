@@ -37,7 +37,7 @@ export const authSlice = createSlice({
               if (post._id === action.payload.post._id) return action.payload.post;
               return post;
             });
-            state.posts = updatedPosts;
+            state.posts = updatedPosts.reverse();
           },
         deleteThisPost: (state, action) => {
             const updatedPosts = state.posts.filter((post) => post._id !== action.payload.id);            
