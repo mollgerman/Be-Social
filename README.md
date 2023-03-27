@@ -1,4 +1,4 @@
-# Be Social!
+# <img src="./frontend/public/BS.svg">Be Social!
 <h2>Be Social! is a fullstack web application that simulates a social media app.</h2>
 
 <h3>Frameworks and libraries used:</h3>
