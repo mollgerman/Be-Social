@@ -20,4 +20,4 @@
   <li>Add friends</li>
 </ul>
 
-<h3>Take a look at <a href="https://mollgerman-besocial.netlify.app/">mollgerman-besocial.netlify.app</a></h3>
+<h3>Take a look at <a href="https://mollgerman-besocial.netlify.app/" target="_blank">mollgerman-besocial.netlify.app</a></h3>
