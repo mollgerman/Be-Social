@@ -1,8 +1,7 @@
 # Be Social!
-<h2>Be Social! is a fullstack web appiclation that simulates a social media app.</h2>
+<h2>Be Social! is a fullstack web application that simulates a social media app.</h2>
 
 <h3>Frameworks and libraries used:</h3>
-
 <ul>
   <li>React</li>
   <li>JWT</li>
@@ -12,4 +11,13 @@
   <li>Mongoose (MongoDB database)</li>
 </ul>
 
-Funciones de la aplicación: Registro de usuario, creación de publicaciónes con imagenes, likes, comentarios, y añadir a amigos.
+<h3>App funtionalities:</h3>
+<ul>
+  <li>User Sign In</li>
+  <li>Post creation with images</li>
+  <li>Likes</li>
+  <li>Comments</li>
+  <li>Add friends</li>
+</ul>
+
+<h3>Take a look at <a href="https://mollgerman-besocial.netlify.app/">mollgerman-besocial.netlify.app</a></h3>
