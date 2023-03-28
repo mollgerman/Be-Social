@@ -31,6 +31,7 @@ import UserImage from "../../components/UserImage";
     const token = useSelector((state) => state.token);
     const loggedInUserId = useSelector((state) => state.user._id);
     const userPicture = useSelector((state) => state.user.picture64);
+    const { firstName, lastName } = useSelector((state) => state.user) 
     const isLiked = Boolean(likes[loggedInUserId]);
     const likeCount = Object.keys(likes).length;
 
@@ -65,7 +66,7 @@ import UserImage from "../../components/UserImage";
     const patchCommentParams = new URLSearchParams()
     patchCommentParams.append("user_id", loggedInUserId);
     patchCommentParams.append("userPicture", userPicture);
-    patchCommentParams.append("name", name);
+    patchCommentParams.append("name", `${firstName} ${lastName}`);
     patchCommentParams.append("comment", toComment);
 
     const patchComment = async () => {
