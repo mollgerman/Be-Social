@@ -22,15 +22,15 @@
 
 <hr>
 <h3>Log In page</h3>
-<img src="./frontend/public/Captura3.jpg" style="width:100px;height:100px;">
+<img src="./frontend/public/Captura3.jpg" style="width:30vw;height:auto;">
 <hr>
 <h3>Sign In page</h3>
-<img src="./frontend/public/Captura4.jpg" style="width:100px;height:100px;">
+<img src="./frontend/public/Captura4.jpg" style="width:30vw;height:auto;">
 <hr>
 <h3>Home page</h3>
-<img src="./frontend/public/Captura1.jpg" style="width:100px;height:100px;">
+<img src="./frontend/public/Captura1.jpg" style="width:30vw;height:auto;">
 <hr>
 <h3>Profile page</h3>
-<img src="./frontend/public/Captura2.png" style="width:100px;height:100px;">
+<img src="./frontend/public/Captura2.png" style="width:30vw;height:auto;">
 
 <h3>Take a look at <a href="https://mollgerman-besocial.netlify.app/" target="_blank" rel="noopener noreferrer">mollgerman-besocial.netlify.app</a></h3>
