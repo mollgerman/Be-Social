@@ -32,5 +32,8 @@
 <hr>
 <h3>Profile page</h3>
 <img src="./frontend/public/Captura2.png" style="width:98vw;height:auto;">
+<hr>
+<h3>Dark mode activated</h3>
+<img src="./frontend/public/Captura5.jpg" style="width:98vw;height:auto;">
 
 <h3>Take a look at <a href="https://mollgerman-besocial.netlify.app/" target="_blank" rel="noopener noreferrer">mollgerman-besocial.netlify.app</a></h3>
